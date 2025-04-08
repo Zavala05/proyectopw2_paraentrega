@@ -1,0 +1,75 @@
+@import 'mixins';
+@import 'variables';
+
+footer{
+    background-color: $navbarcolor;
+    color: white;
+    text-align: center;
+    display: flex;
+    margin-top: 3rem;
+    justify-content: center;
+}
+
+.customnavbar{
+    background-color: $navbarcolor;
+}
+
+
+
+
+
+
+ #categorias{
+    @include colocacionlineal;
+ }
+
+
+ #categorias .card{
+    border: none;
+
+    
+ }
+#categorias a{
+    text-decoration: none;
+
+
+}
+
+#categorias .card:hover img{
+    @include zoom;
+
+
+}
+
+#categorias .card img{
+    transition:  all 1.2s ease;
+}
+
+h2{
+    @include titulos;
+    margin-top: 3rem;
+}
+
+#carteras{
+    @include colocacionlineal;
+    .card{
+        margin-top: 1.5rem
+    }
+}
+
+
+#cabello{
+    @include colocsaciontarjetas;
+}
+
+
+#mas{
+    @include colocacionlineal;
+    .card{
+        margin-top: 1.5rem;
+    }
+    
+}
+
+
+ 

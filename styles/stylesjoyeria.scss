@@ -1,0 +1,69 @@
+
+@import 'mixins';
+@import 'variables';
+
+
+
+
+footer{
+   background-color: $navbarcolor;
+   color: white;
+   text-align: center;
+   display: flex;
+   margin-top: 3rem;
+   justify-content: center;
+}
+ .customdd{
+    background-color: $navbarcolor;
+ }
+
+ h1{
+    @include titulos;
+ }
+
+ #productos{
+    @include colocacionlineal;
+
+ }
+
+ a{
+    text-decoration: none;;
+ }
+
+ #productos .card:hover img{
+    @include zoom;
+ }
+
+ #productos .card img{
+    transition: 1.5s;
+ }
+
+
+
+ #productos .card{
+    border: none;
+ }
+ 
+
+  #acordeon h3{
+    @include titulos;
+    
+ }
+
+ .accordion{
+    margin: 15px;
+    margin-top: 2px;
+ }
+
+
+ .customacor{
+    @include colocsaciontarjetas;
+ }
+
+ 
+
+ footer p{
+
+   margin-top: 2%;
+   
+}
